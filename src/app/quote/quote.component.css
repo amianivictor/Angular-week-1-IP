@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.myheading h1{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.myheading{
+  background-color: azure;
+  color: black;
+}
+.button-1 button{
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 450;
+  border-radius: 10%;
+}
+hr{
+  color: maroon;
+}
+.general-2{
+  background-color: black;
+  color: black;
+}
+.mylist{
+  list-style: none;
+  background-color: yellow;
+}
+.quoty{
+  background-color: rgb(199, 218, 32);
+  color: black;
+  height: 10vh;
+  font-size: 20px;
+  font-weight: 500;
+}
+button{
+  border-radius: 5px;
+  border: solid rgb(36, 1, 1) 1px;
+}
+button:hover{
+  background-color: red; /* Green */
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+}

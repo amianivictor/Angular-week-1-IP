@@ -1,0 +1,27 @@
+<div class="container question">
+  <hr>
+  <div class="row d-flex justify-content-center">
+      <p>WOULD YOU LIKE TO CREATE A NEW QUOTE?</p>
+  </div>
+  <form (ngSubmit)="submitQuote()" #goalForm="ngForm" class="myform">
+      <div class="row form-group details">
+          <input class="form-control" #name="ngModel" name="name" id="myname" type="text" [(ngModel)]="newQuote.AUTHOR" required placeholder="What's your full name?">
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+              <p>Name is required</p>
+          </div>
+      </div>
+      <div class="row form-group details mt-3">
+          <textarea class="form-control" type="text" #quote="ngModel" id="myquote" [(ngModel)]="newQuote.QUOTES" name="quote" required placeholder="Type your quote here..."></textarea>
+          <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+              <p>Quote is required</p>
+          </div>
+      </div>
+      <hr>
+      <div class="button-2">
+          <button (click) ="submitQuote" type="submit">ADD QUOTE</button>
+      </div>
+  </form>
+  <footer class="row myfooter d-flex justify-content-center">
+      <p>Made with love by Victor</p>
+  </footer>
+</div>
